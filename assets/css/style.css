@@ -40,7 +40,34 @@ body,html {
 	background-color: blue;
 }
 
+.wrapper-home > main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
 .wrapper-home > footer, .wrapper-blog > footer {
 	grid-area: footer;
 	background-color: red;
+}
+
+.card {
+	width: 300px;
+	background-color: #fff;
+	height: 400px;
+	margin: 10px;
+	color: black;
+}
+
+
+@media screen and (max-width: 900px) {
+	.wrapper-home > main {
+		display:block;
+	}
+
+	.card {
+		width: 100%;
+		margin: 10px 0;
+	}
 }
